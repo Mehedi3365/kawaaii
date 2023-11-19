@@ -564,16 +564,57 @@ body {
 .body-sale {
   margin-top: 160px;
 }
+@media only screen and (min-width: 1440px) and (max-width: 1580px) {
+  .body-sale {
+    margin-top: 106px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .body-sale {
+    margin-left: 17px;
+    margin-top: 76px;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .body-sale {
+    margin-left: 0;
+  }
+}
 .body-sale-item {
   margin-bottom: 48px;
+}
+@media only screen and (max-width: 1279px) {
+  .body-sale-item {
+    margin-bottom: 30px;
+  }
 }
 .body-sale-item-single {
   background-color: #101010;
   padding: 32px 24px;
   margin-bottom: 32px;
 }
+@media only screen and (max-width: 1439px) {
+  .body-sale-item-single {
+    padding: 26px 14px;
+  }
+}
 .body-sale-item-single-top {
   padding-right: 268px;
+}
+@media only screen and (min-width: 1440px) and (max-width: 1580px) {
+  .body-sale-item-single-top {
+    padding-right: 100px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .body-sale-item-single-top {
+    padding-right: 55px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .body-sale-item-single-top {
+    padding-right: 90px;
+  }
 }
 .body-sale-item-single-top p {
   font-size: 14px;
@@ -623,6 +664,11 @@ body {
   margin-bottom: 16px;
   font-weight: 600;
 }
+@media only screen and (max-width: 1279px) {
+  .body-sale-item-single-top h3 {
+    font-size: 18px;
+  }
+}
 .body-sale-item-single-bottom span {
   width: 64.222px;
   height: 16px;
@@ -631,6 +677,12 @@ body {
 }
 .body-sale-item-single-bottom span:last-child {
   margin: 0;
+}
+@media only screen and (max-width: 1279px) {
+  .body-mintbtn {
+    margin-bottom: 70px;
+    padding: 16px 50px;
+  }
 }
 .body-mintbtn a {
   padding: 18px 56px;
@@ -668,18 +720,7 @@ body {
 }
 
 .parttan {
-  position: relative;
-}
-.parttan::before {
-  position: absolute;
-  top: 0px;
-  right: -1519px;
-  z-index: -1;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/page-3-shado2.png);
-  background-repeat: no-repeat;
+  background-image: url(../../img/page);
 }
 
 .banner {

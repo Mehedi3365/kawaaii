@@ -1,14 +1,39 @@
 .body {
     &-sale {
         margin-top: 160px;
+        @include xxl {
+            margin-top: 106px;
+        }
+        @include xl {
+            margin-left: 17px;
+            margin-top: 76px;
+        }
+        @include lg {
+            margin-left: 0;
+        }
         &-item {
             margin-bottom: 48px;
+            @include lg {
+                margin-bottom: 30px;
+            }
             &-single {
                 background-color: $secondary;
                 padding: 32px 24px;
                 margin-bottom: 32px;
+                @include xl {
+                    padding: 26px 14px;
+                }
                 &-top {
                     padding-right: 268px;
+                    @include xxl {
+                        padding-right: 100px;
+                    }
+                    @include xl {
+                        padding-right: 55px;
+                    }
+                    @include sm {
+                        padding-right: 90px;
+                    }
                     & p {
                         @include f14;
                         color: $white;
@@ -21,6 +46,9 @@
                         color: $white;
                         margin-bottom: 16px;
                         font-weight: 600;
+                        @include lg {
+                            font-size: 18px;
+                        }
                     }
                 }
                 &-bottom {
@@ -38,6 +66,10 @@
         }
     }
     &-mintbtn {
+        @include lg {
+            margin-bottom: 70px;
+            padding: 16px 50px;
+        }
         & a {
             padding: 18px 56px;
             background: $btnbgp1;
