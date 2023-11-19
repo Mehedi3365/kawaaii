@@ -62,16 +62,6 @@ img {
   height: 100%;
 }
 
-::-moz-selection {
-  background-color: black;
-  color: greenyellow;
-}
-
-::selection {
-  background-color: black;
-  color: greenyellow;
-}
-
 .abtn {
   padding: 17px 40px;
   font-size: 16px;
