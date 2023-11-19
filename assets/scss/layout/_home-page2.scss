@@ -13,7 +13,7 @@
                         @include f14;
                         color: $white;
                         opacity: 0.8;
-                        margin-bottom: 12px;
+                        @include mb12;
                         font-weight: 500;
                     }
                     & h3 {

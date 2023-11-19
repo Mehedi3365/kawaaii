@@ -4,6 +4,12 @@ body {
     color: $secondary;
     font-weight: 400;
     overflow-x: hidden;
+    @include lg {
+        font-size: 14px;
+    }
+    @include sm {
+        font-size: 13px;
+    }
 }
 
 h1,
@@ -21,6 +27,9 @@ p {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    @include lg {
+        font-size: 14px;
+    }
 }
 
 ul,

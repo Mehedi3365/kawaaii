@@ -3,12 +3,27 @@
     @include xxl {
         font-size: 15px;
     }
+    @include xl {
+        font-size: 14px;
+    }
+    @include sm {
+        font-size: 12px;
+    }
 }
 
 @mixin f14 {
     font-size: 14px;
     @include xxl {
         font-size: 13px;
+    }
+    @include xl {
+        font-size: 12px;
+    }
+    @include sm {
+        font-size: 11px;
+    }
+    @include ssm {
+        font-size: 9px;
     }
 }
 
@@ -17,6 +32,12 @@
     @include xxl {
         font-size: 17px;
     }
+    @include xl {
+        font-size: 15px;
+    }
+    @include sm {
+        font-size: 14px;
+    }
 }
 
 @mixin f24 {
@@ -24,10 +45,31 @@
     @include xxl {
         font-size: 22px;
     }
+    @include xl {
+        font-size: 20px;
+    }
+    @include md {
+        font-size: 18px;
+    }
+    @include sm {
+        font-size: 16px;
+    }
+    @include ssm {
+        font-size: 14px;
+    }
 }
 
 @mixin mb12 {
     margin-bottom: 12px;
+    @include xxl {
+        margin-bottom: 11px;
+    }
+    @include xl {
+        margin-bottom: 9px;
+    }
+    @include ssm {
+        margin-bottom: 7px;
+    }
 }
 
 @mixin transition {

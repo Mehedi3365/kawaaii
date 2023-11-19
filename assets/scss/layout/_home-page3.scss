@@ -72,7 +72,7 @@
                 & p {
                     @include f14;
                     color: #9B9B9B;
-                    margin-bottom: 12px;
+                    @include mb12;
                 }
                 &-icon {
                     align-items: center;

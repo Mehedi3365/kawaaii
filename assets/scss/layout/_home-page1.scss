@@ -2,20 +2,39 @@ body {
     background-color: black;
 }
 
-.header {
-    & .pcontainer {
-        --contw: 150px;
-        margin-left: $contw;
-        margin-right: $contw;
-        // @include xxl {
-        //     --contw: 116px;
-        // }
+.pcontainer {
+    --contw: 150px;
+    @include xxl {
+        --contw: 125px;
     }
-    padding: 20px 0;
+    @include xl {
+        --contw: 100px;
+    }
+    @include lg {
+        --contw: 80px;
+    }
+    @include sm {
+        --contw: 20px;
+    }
+    @include ssm {
+        --contw: 10px;
+    }
+    margin-left: var( --contw);
+    margin-right: var(--contw);
+}
+
+.header {
+    padding: 10px 0;
     border-bottom: 1px solid $borderp1;
     &-logo {
         width: 74px;
         height: auto;
+        @include lg {
+            width: 65px;
+        }
+        @include ssm {
+            width: 60px;
+        }
         &:hover {
             opacity: 0.7;
             @include transition;
@@ -27,14 +46,13 @@ body {
     & .pcontainer {
         border-left: 1px solid $borderp1;
         border-right: 1px solid $borderp1;
-        margin-left: $contw;
-        margin-right: $contw;
     }
     &-card {
         & a {
             color: #656467;
             margin-top: 25px;
             margin-bottom: 20px;
+            font-family: 'inter';
             &:hover {
                 color: #9995a0;
                 @include transition;
@@ -43,6 +61,9 @@ body {
         &-wrap {
             padding: 24px;
             background-color: $secondary;
+            @include ssm {
+                padding: 14px;
+            }
             &-img {
                 margin-bottom: 24px;
             }
@@ -52,7 +73,7 @@ body {
                     & h4 {
                         font-family: Tomorrow;
                         color: $white;
-                        margin-bottom: 12px;
+                        @include mb12;
                     }
                     & p {
                         color: $primaryp2;
@@ -106,11 +127,24 @@ body {
         margin-top: 115px;
         @include xxl {
             width: 400px !important;
+            margin-top: 80px;
+        }
+        @include xl {
+            margin-left: 40px;
+        }
+        @include md {
+            margin-left: 0;
         }
         &-card {
             &-head {
                 margin-bottom: 70px;
                 align-items: end;
+                @include xxl {
+                    margin-bottom: 60px;
+                }
+                @include xl {
+                    margin-bottom: 60px;
+                }
                 &-img {
                     width: 90px;
                     height: auto;
@@ -119,7 +153,7 @@ body {
                 &-right {
                     & .fp {
                         color: $white;
-                        margin-bottom: 12px;
+                        @include mb12;
                     }
                     & p {
                         color: $primary;
@@ -127,7 +161,16 @@ body {
                     & h2 {
                         color: $white;
                         font-size: 32px;
-                        margin-bottom: 12px;
+                        @include mb12;
+                        @include xl {
+                            font-size: 30px;
+                        }
+                        @include md {
+                            font-size: 28px;
+                        }
+                        @include sm {
+                            font-size: 24px;
+                        }
                     }
                 }
             }
@@ -137,6 +180,12 @@ body {
                     justify-content: space-between;
                     padding: 24px;
                     border-top: 1px solid $borderp1;
+                    @include xxl {
+                        padding: 15px;
+                    }
+                    @include xl {
+                        padding: 20px;
+                    }
                     & .lasth3 {
                         @include f24;
                         color: $white;
@@ -153,7 +202,7 @@ body {
                     }
                     &-right {
                         &-wrap {
-                            margin-bottom: 12px;
+                            @include mb12;
                             align-items: center;
                             justify-content: end;
                             & h3 {
@@ -172,6 +221,9 @@ body {
                 }
             }
             &-button {
+                @include md {
+                    margin-bottom: 70px;
+                }
                 & a {
                     display: block;
                     padding: 23px 0;
@@ -179,6 +231,19 @@ body {
                     background-color: #FDFDFD;
                     text-align: center;
                     font-weight: 500;
+                    font-size: 18px;
+                    @include xxl {
+                        padding: 18px 0;
+                    }
+                    @include lg {
+                        padding: 16px 0;
+                    }
+                    @include md {
+                        font-size: 16px;
+                    }
+                    @include ssm {
+                        font-size: 13px;
+                    }
                     &:hover {
                         @include transition;
                         background-color: #b3acac;
