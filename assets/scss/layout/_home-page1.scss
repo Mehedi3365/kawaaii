@@ -1,7 +1,3 @@
-body {
-    background-color: black;
-}
-
 .pcontainer {
     --contw: 150px;
     @include xxl {
@@ -48,6 +44,9 @@ body {
         border-right: 1px solid $borderp1;
     }
     &-card {
+        @include xxl {
+            margin-bottom: 80px;
+        }
         & a {
             color: #656467;
             margin-top: 25px;

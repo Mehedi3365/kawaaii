@@ -4,6 +4,7 @@ body {
     color: $secondary;
     font-weight: 400;
     overflow-x: hidden;
+    background-color: $black;
     @include lg {
         font-size: 14px;
     }

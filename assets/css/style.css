@@ -5,6 +5,7 @@ body {
   color: #101010;
   font-weight: 400;
   overflow-x: hidden;
+  background-color: #000000;
 }
 @media only screen and (max-width: 1279px) {
   body {
@@ -109,10 +110,6 @@ img {
   transition: 0.3s ease-in-out;
 }
 
-body {
-  background-color: black;
-}
-
 .pcontainer {
   --contw: 150px;
   margin-left: var(--contw);
@@ -170,6 +167,11 @@ body {
 .body .pcontainer {
   border-left: 1px solid #1A191A;
   border-right: 1px solid #1A191A;
+}
+@media only screen and (min-width: 1440px) and (max-width: 1580px) {
+  .body-card {
+    margin-bottom: 80px;
+  }
 }
 .body-card a {
   color: #656467;
@@ -715,12 +717,39 @@ body {
 }
 
 .pcontainer2 {
-  margin-right: 150px;
-  margin-left: 150px;
+  --contw: 150px;
+  margin-right: var(--contw);
+  margin-left: var(--contw);
+}
+@media only screen and (min-width: 1440px) and (max-width: 1580px) {
+  .pcontainer2 {
+    --contw: 125px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .pcontainer2 {
+    --contw: 100px;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .pcontainer2 {
+    --contw: 80px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .pcontainer2 {
+    --contw: 20px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .pcontainer2 {
+    --contw: 10px;
+  }
 }
 
 .parttan {
-  background-image: url(../../img/page);
+  background-image: url(../img/Home3.png);
+  background-size: 1920px 1160px;
 }
 
 .banner {
@@ -728,23 +757,30 @@ body {
   margin-bottom: 80px;
   position: relative;
 }
+@media only screen and (max-width: 1439px) {
+  .banner {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
 .banner-item {
   background-color: #101010;
 }
 .banner-item-single {
   padding: 24px 16px;
 }
-.banner-item-single-img {
-  width: 373px;
-  height: auto;
-}
 .banner-item-single-contant {
-  padding: 32px 16px;
+  padding-top: 32px;
 }
 .banner-item-single-contant h3 {
   font-size: 20px;
   font-weight: 600;
   color: white;
+}
+@media only screen and (max-width: 1439px) {
+  .banner-item-single-contant h3 {
+    font-size: 18px;
+  }
 }
 .banner-item-single-contant p {
   color: #9B9B9B;
@@ -758,19 +794,64 @@ body {
   background-color: #1F1F1F;
   padding: 40px 30px;
 }
+@media only screen and (max-width: 991px) {
+  .footer-cont {
+    padding: 35px 0px;
+  }
+}
 .footer-item {
   display: flex;
+}
+@media only screen and (max-width: 767px) {
+  .footer-item {
+    flex-wrap: wrap;
+  }
 }
 .footer-item-single {
   display: flex;
   align-items: center;
   margin-right: 65px;
 }
+@media only screen and (min-width: 1440px) and (max-width: 1580px) {
+  .footer-item-single {
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .footer-item-single {
+    margin-right: 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .footer-item-single {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer-item-single {
+    margin-bottom: 20px;
+  }
+}
 .footer-item-single:last-child {
   margin-right: 0;
 }
 .footer-item-single-left {
   margin-right: 65px;
+}
+@media only screen and (min-width: 1440px) and (max-width: 1580px) {
+  .footer-item-single-left {
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .footer-item-single-left {
+    margin-right: 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .footer-item-single-left {
+    margin-right: 17px;
+  }
 }
 .footer-item-single-left p {
   font-size: 14px;
@@ -854,6 +935,16 @@ body {
 @media only screen and (max-width: 767px) {
   .footer-item-single-left h3 {
     font-size: 12px;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .footer-button {
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer-button {
+    margin-top: 10px;
   }
 }
 .footer-button a {
