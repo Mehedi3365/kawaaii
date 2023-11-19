@@ -1,0 +1,35 @@
+@mixin f16 {
+    font-size: 16px;
+    @include xxl {
+        font-size: 15px;
+    }
+}
+
+@mixin f14 {
+    font-size: 14px;
+    @include xxl {
+        font-size: 13px;
+    }
+}
+
+@mixin f18 {
+    font-size: 18px;
+    @include xxl {
+        font-size: 17px;
+    }
+}
+
+@mixin f24 {
+    font-size: 24px;
+    @include xxl {
+        font-size: 22px;
+    }
+}
+
+@mixin mb12 {
+    margin-bottom: 12px;
+}
+
+@mixin transition {
+    transition: 0.3s ease-in-out;
+}

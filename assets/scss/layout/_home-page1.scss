@@ -1,0 +1,190 @@
+body {
+    background-color: black;
+}
+
+.header {
+    & .pcontainer {
+        --contw: 150px;
+        margin-left: $contw;
+        margin-right: $contw;
+        // @include xxl {
+        //     --contw: 116px;
+        // }
+    }
+    padding: 20px 0;
+    border-bottom: 1px solid $borderp1;
+    &-logo {
+        width: 74px;
+        height: auto;
+        &:hover {
+            opacity: 0.7;
+            @include transition;
+        }
+    }
+}
+
+.body {
+    & .pcontainer {
+        border-left: 1px solid $borderp1;
+        border-right: 1px solid $borderp1;
+        margin-left: $contw;
+        margin-right: $contw;
+    }
+    &-card {
+        & a {
+            color: #656467;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            &:hover {
+                color: #9995a0;
+                @include transition;
+            }
+        }
+        &-wrap {
+            padding: 24px;
+            background-color: $secondary;
+            &-img {
+                margin-bottom: 24px;
+            }
+            &-contant {
+                &-head {
+                    margin-bottom: 24px;
+                    & h4 {
+                        font-family: Tomorrow;
+                        color: $white;
+                        margin-bottom: 12px;
+                    }
+                    & p {
+                        color: $primaryp2;
+                    }
+                }
+                &-bottom {
+                    &-left {
+                        border-right: 1px solid #5A227D;
+                        width: 50%;
+                        &-icon {
+                            margin-bottom: 8px;
+                            &-svg {
+                                width: 32px;
+                                height: 32px;
+                                background-color: #201327;
+                                margin-right: 12px;
+                                border-radius: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            & span {
+                                font-weight: 600;
+                                @include f18;
+                                display: block;
+                                color: #D025FD;
+                            }
+                        }
+                        & p {
+                            color: $primaryp2;
+                            @include f16;
+                        }
+                    }
+                    &-right {
+                        & h4 {
+                            @include f18;
+                            font-weight: 600;
+                            margin-bottom: 13px;
+                            color: $white;
+                        }
+                        & p {
+                            @include f16;
+                            color: $primaryp2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-pricing {
+        margin-top: 115px;
+        @include xxl {
+            width: 400px !important;
+        }
+        &-card {
+            &-head {
+                margin-bottom: 70px;
+                align-items: end;
+                &-img {
+                    width: 90px;
+                    height: auto;
+                    margin-right: 40px;
+                }
+                &-right {
+                    & .fp {
+                        color: $white;
+                        margin-bottom: 12px;
+                    }
+                    & p {
+                        color: $primary;
+                    }
+                    & h2 {
+                        color: $white;
+                        font-size: 32px;
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+            &-item {
+                margin-bottom: 32px;
+                &-single {
+                    justify-content: space-between;
+                    padding: 24px;
+                    border-top: 1px solid $borderp1;
+                    & .lasth3 {
+                        @include f24;
+                        color: $white;
+                        margin-bottom: 0;
+                    }
+                    &:last-child {
+                        border-bottom: 1px solid $borderp1;
+                    }
+                    & p {
+                        color: $primary;
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+                    }
+                    &-right {
+                        &-wrap {
+                            margin-bottom: 12px;
+                            align-items: center;
+                            justify-content: end;
+                            & h3 {
+                                @include f24;
+                                color: $white;
+                                margin-bottom: 0;
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+                    &-left {
+                        & p {
+                            margin-right: 16px;
+                        }
+                    }
+                }
+            }
+            &-button {
+                & a {
+                    display: block;
+                    padding: 23px 0;
+                    color: $secondary;
+                    background-color: #FDFDFD;
+                    text-align: center;
+                    font-weight: 500;
+                    &:hover {
+                        @include transition;
+                        background-color: #b3acac;
+                    }
+                }
+            }
+        }
+    }
+}

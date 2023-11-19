@@ -1,0 +1,52 @@
+.body {
+    &-sale {
+        margin-top: 160px;
+        &-item {
+            margin-bottom: 48px;
+            &-single {
+                background-color: $secondary;
+                padding: 32px 24px;
+                margin-bottom: 32px;
+                &-top {
+                    padding-right: 268px;
+                    & p {
+                        @include f14;
+                        color: $white;
+                        opacity: 0.8;
+                        margin-bottom: 12px;
+                        font-weight: 500;
+                    }
+                    & h3 {
+                        font-size: 20px;
+                        color: $white;
+                        margin-bottom: 16px;
+                        font-weight: 600;
+                    }
+                }
+                &-bottom {
+                    & span {
+                        width: 64.222px;
+                        height: 16px;
+                        background: #37323E;
+                        margin-right: 4px;
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-mintbtn {
+        & a {
+            padding: 18px 56px;
+            background: $btnbgp1;
+            @include f16;
+            color: $secondary;
+            &:hover {
+                background-color: #b8b8b8;
+                @include transition;
+            }
+        }
+    }
+}
