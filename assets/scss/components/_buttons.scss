@@ -17,8 +17,5 @@
     @include ssm {
         padding: 8px 23px
     }
-    &:hover {
-        background-color: rgb(196, 193, 193);
-        transition: .3s ease-in-out;
-    }
+    @include transition;
 }

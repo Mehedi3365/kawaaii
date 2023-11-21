@@ -20,6 +20,33 @@
                 background-color: $secondary;
                 padding: 32px 24px;
                 margin-bottom: 32px;
+                position: relative;
+                z-index: 1;
+                &:hover {
+                    color: $white;
+                    &::before {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                &::before {
+                    border: 1px solid #D422FD;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    visibility: hidden;
+                    @include transition;
+                    content: '';
+                }
+                &:hover {
+                    & span {
+                        background-color: #d422fd;
+                    }
+                }
                 @include xl {
                     padding: 26px 14px;
                 }
@@ -57,6 +84,7 @@
                         height: 16px;
                         background: #37323E;
                         margin-right: 4px;
+                        transition: 0.6s ease-in-out;
                         &:last-child {
                             margin: 0;
                         }
@@ -66,18 +94,47 @@
         }
     }
     &-mintbtn {
+        position: relative;
         @include lg {
             margin-bottom: 70px;
             padding: 16px 50px;
         }
-        & a {
-            padding: 18px 56px;
-            background: $btnbgp1;
-            @include f16;
+        & .rc2 {
+            background: $white;
             color: $secondary;
+            padding: 18px 56px;
+            @include f16;
+            @include transition;
+            position: relative;
+            z-index: 1;
             &:hover {
-                background-color: #b8b8b8;
+                padding: 18px 48px;
+                & span {
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 3;
+                }
+            }
+            & span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                background: $white;
+                color: $secondary;
+                // padding: 18px 56px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: -1;
+                opacity: 0;
+                visibility: hidden;
                 @include transition;
+                @include f16;
+                color: $white;
+                background-image: linear-gradient(to right, #D422FD, #9834EF);
             }
         }
     }
